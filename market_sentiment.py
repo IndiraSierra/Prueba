@@ -53,3 +53,34 @@ investment_df['position'] = np.where(investment_df['price_direction'] == investm
 investment_df['strategy_returns'] = investment_df['position'] * (investment_df['actual'].shift(-1) - investment_df['actual']) / investment_df['actual']
 investment_df['buy_and_hold_returns'] = (investment_df['actual'].shift(-1) - investment_df['actual']) / investment_df['actual']
 
+Datos normalizados guardados en 'binance_data_normalized.csv'
+Sentimientos diarios guardados en 'daily_sentiments.csv'
+Predicciones y sentimiento guardados en 'predicted_data_with_sentiment.csv'
+Mean Absolute Error (MAE): 30.66908467315391
+Root Mean Squared Error (RMSE): 36.99641752814565
+R-squared (R2): 0.9257591918098058
+Mean Absolute Percentage Error (MAPE): 0.00870572230484879
+Gráfica guardada como 'ETH_USDT_price_prediction.png'
+Gráfica de residuales guardada como 'ETH_USDT_residuals.png'
+Correlation between actual and predicted prices: 0.9752007459642241
+Gráfica de estrategia de inversión guardada como 'ETH_USDT_investment_strategy.png'
+Gráfica de drawdown guardada como 'ETH_USDT_drawdown.png'
+Sharpe Ratio: 9.41431958149606
+Sortino Ratio: 11800588386323879936.0000
+Número de rendimientos totales: 28
+Número de rendimientos en exceso: 28
+Número de rendimientos negativos: 19
+Media de rendimientos en exceso: 0.005037
+Desviación estándar de rendimientos negativos: 0.000000
+Sortino Ratio: nan
+Beta: 0.33875104783408166
+Alpha: 0.006981197358213854
+Cross-Validation MAE: 1270.7809910146143 ± 527.5746657573876
+SMA Mean Absolute Error (MAE): 344.3737716856061
+SMA Mean Absolute Error (MAE): 344.3737716856061
+SMA Root Mean Squared Error (RMSE): 483.0396130996611
+SMA R-squared (R2): 0.5813550203375846
+Gráfica de predicción SMA guardada como 'ETH_USDT_sma_price_prediction.png'
+Gráfica de precio, predicción y sentimiento guardada como 'ETH_USDT_price_prediction_sentiment.png'
+Gráfica de drawdown guardada como 'ETH_USDT_drawdown.png'
+Maximum Drawdown: 0.00%
