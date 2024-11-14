@@ -84,3 +84,7 @@ Gráfica de predicción SMA guardada como 'ETH_USDT_sma_price_prediction.png'
 Gráfica de precio, predicción y sentimiento guardada como 'ETH_USDT_price_prediction_sentiment.png'
 Gráfica de drawdown guardada como 'ETH_USDT_drawdown.png'
 Maximum Drawdown: 0.00%
+
+"""
+chart_modified
+"""
