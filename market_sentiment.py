@@ -53,7 +53,7 @@ investment_df['position'] = np.where(investment_df['price_direction'] == investm
 investment_df['strategy_returns'] = investment_df['position'] * (investment_df['actual'].shift(-1) - investment_df['actual']) / investment_df['actual']
 investment_df['buy_and_hold_returns'] = (investment_df['actual'].shift(-1) - investment_df['actual']) / investment_df['actual']
 
-Datos normalizados guardados en 'binance_data_normalized.csv'
+#Datos normalizados guardados en 'binance_data_normalized.csv'
 Sentimientos diarios guardados en 'daily_sentiments.csv'
 Predicciones y sentimiento guardados en 'predicted_data_with_sentiment.csv'
 Mean Absolute Error (MAE): 30.66908467315391
